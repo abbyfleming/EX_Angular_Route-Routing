@@ -2,15 +2,24 @@
 <html>
 <head>
 	<title>Route Routing</title>
+	<script type="text/javascript" src="lib/bower_components/angular/angular.min.js"></script>
 	<script src="lib/bower_components/angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="lib/bower_components/jquery/dist/jquery.min.js"></script>
 </head>
-<body>
+
+<body ng-app="HighwayApp">
 
 
+<div ng-include="'partials/header.html'"></div>
 
-
+<div ng-view></div>
 
 <!-- app & factories -->
 <script type="text/javascript" src="app/app.js"></script>
+
+<!-- controllers -->
+<script type="text/javascript" src="app/controllers/brpCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/ptpCtrl.js"></script>
+
 </body>
 </html>
